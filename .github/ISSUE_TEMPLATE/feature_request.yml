@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a new capability or public API change before implementation.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Japanese and English are both welcome. 日本語・英語のどちらでも受け付けます。
+        Describe the use case before proposing an implementation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what blocks you today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API or behavior
+      description: Show the method names, types, addresses, or wire behavior you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include workarounds and related Java or OSC libraries when relevant.
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and scope
+      description: Does this change public API, wire behavior, VRChat behavior, or dependencies?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and documentation for this request.
+          required: true
+        - label: I understand that new features are discussed here before a pull request is opened.
+          required: true
+        - label: This request contains no private information.
+          required: true
